@@ -1,5 +1,7 @@
 #include <iostream>
 #include "add.h"
+#include "multiply.h"
+#include "pow.h"
 
 void areEquals(double expected, double got)
 {
@@ -16,5 +18,7 @@ void areEquals(double expected, double got)
 int main()
 {
     areEquals(4, add(2,2));
+    areEquals(9, multiply(3,3));
+    areEquals(1024, pow(2,10));
     return 0;
 }
